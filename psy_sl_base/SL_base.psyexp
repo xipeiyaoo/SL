@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2021.2.3">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="list"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
+    <Param name="Save hdf5 file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="pix" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1707, 960]" valType="list"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="color"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="elAddress" updates="None" val="100.1.1.1" valType="str"/>
+    <Param name="elDataFiltering" updates="None" val="FILTER_LEVEL_2" valType="str"/>
+    <Param name="elLiveFiltering" updates="None" val="FILTER_LEVEL_OFF" valType="str"/>
+    <Param name="elModel" updates="None" val="EYELINK 1000 DESKTOP" valType="str"/>
+    <Param name="elPupilAlgorithm" updates="None" val="ELLIPSE_FIT" valType="str"/>
+    <Param name="elPupilMeasure" updates="None" val="PUPIL_AREA" valType="str"/>
+    <Param name="elSampleRate" updates="None" val="1000" valType="num"/>
+    <Param name="elSimMode" updates="None" val="False" valType="bool"/>
+    <Param name="elTrackEyes" updates="None" val="RIGHT_EYE" valType="str"/>
+    <Param name="elTrackingMode" updates="None" val="PUPIL_CR_TRACKING" valType="str"/>
+    <Param name="expName" updates="None" val="SL_base" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="eyetracker" updates="None" val="None" valType="str"/>
+    <Param name="gpAddress" updates="None" val="127.0.0.1" valType="str"/>
+    <Param name="gpPort" updates="None" val="4242" valType="num"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="mgBlink" updates="None" val="('MIDDLE_BUTTON',)" valType="list"/>
+    <Param name="mgMove" updates="None" val="CONTINUOUS" valType="str"/>
+    <Param name="mgSaccade" updates="None" val="0.5" valType="num"/>
+    <Param name="tbLicenseFile" updates="None" val="" valType="str"/>
+    <Param name="tbModel" updates="None" val="" valType="str"/>
+    <Param name="tbSampleRate" updates="None" val="60" valType="num"/>
+    <Param name="tbSerialNo" updates="None" val="" valType="str"/>
+  </Settings>
+  <Routines>
+    <Routine name="instr">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="欢迎来到本次实验&amp;#10;&amp;#10;接下来屏幕上会出现若干形状&amp;#10;您的任务是找到这些形状中的独特形状（如圆形中的菱形），&amp;#10;并判断该独特形状内线段的方向，&amp;#10;如果线段是竖直的，请按“上”键，如果线段是水平的，请按“左”键。&amp;#10;首先呈现练习试次，随后开始正式实验。&amp;#10;&amp;#10;明白后请按空格键开始。" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="iti">
+      <TextComponent name="iti_blank">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="iti_blank" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5 + random() * 0.25" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val=" " valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="feedback">
+      <TextComponent name="text_4">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="text_4" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$feedback_text" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <CodeComponent name="code_2">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((feedback_text === &quot;&quot;)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if feedback_text == &quot;&quot;:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="formal_cue">
+      <TextComponent name="text_2">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="练习结束，请按空格开始实验&amp;#10;&amp;#10;再次提示，任务为找到独特形状&amp;#10;（例如圆形中的菱形，或菱形中的圆形）&amp;#10;&amp;#10;并判断内部线段朝向" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_3">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="current_trial = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="current_trial = 0" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="end">
+      <TextComponent name="end_2">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="end_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="实验结束，谢谢参与" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="fix">
+      <PolygonComponent name="fix_circle">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="9999" valType="int"/>
+        <Param name="name" updates="None" val="fix_circle" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="regular polygon..." valType="str"/>
+        <Param name="size" updates="constant" val="(20, 20)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="break_3">
+      <TextComponent name="text_3">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="现在可以休息&amp;#10;&amp;#10;准备好了按空格键继续" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_4">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="current_trial = 0;&amp;#10;util.shuffle(trial_list_new);&amp;#10;block_num = (block_num + 1);&amp;#10;if ((block_num === 6)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;block_num&quot;, block_num);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="current_trial = 0&amp;#10;shuffle(trial_list_new)&amp;#10;block_num=block_num+1&amp;#10;if block_num == 6:&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;thisExp.addData('block_num', block_num)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="trial">
+      <PolygonComponent name="fixation">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="9999" valType="int"/>
+        <Param name="name" updates="None" val="fixation" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="regular polygon..." valType="str"/>
+        <Param name="size" updates="constant" val="(20, 20)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc1_shape">
+        <Param name="colorSpace" updates="constant" val="hsv" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc1_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(150, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc1_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc1_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(150, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc2_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc2_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(106, 106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc2_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc2_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(106, 106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1,1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc3_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc3_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 150)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc3_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc3_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 150)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc4_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc4_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(-106,106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2,2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc4_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc4_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(-106,106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc5_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc5_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(-150, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc5_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc5_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(-150, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc6_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc6_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(-106, -106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc6_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc6_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(-106, -106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc7_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc7_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, -150)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc7_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc7_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, -150)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc8_shape">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="[0,0,0]" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc8_shape" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="45" valType="num"/>
+        <Param name="pos" updates="constant" val="(106, -106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(2, 2)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="loc8_line">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="black" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="loc8_line" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(106, -106)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="line" valType="str"/>
+        <Param name="size" updates="constant" val="(1, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <KeyboardComponent name="resp">
+        <Param name="allowedKeys" updates="constant" val="'up','left'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="$cor_resp" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="#import random&amp;#10;#random = Math.random;&amp;#10;block_num=0&amp;#10;circle_vertices = []&amp;#10;theta = []&amp;#10;x=[]&amp;#10;y=[]&amp;#10;green=[-1,0,-1]&amp;#10;red=[1,0,0]&amp;#10;&amp;#10;# base vertices&amp;#10;for i in range(100):&amp;#10;    theta = 2 * pi * i / 99&amp;#10;    x = 25 * cos(theta)&amp;#10;    y = 25 * sin(theta)&amp;#10;    circle_vertices.append((x, y))&amp;#10;a=21  &amp;#10;diamond_vertices = [(-a, a), (a, a), (a, -a), (-a, -a)]&amp;#10;&amp;#10;#define line direction&amp;#10;b=15&amp;#10;hori_start=[-b,0]&amp;#10;hori_end=[b,0]&amp;#10;vert_start=[0,-b]&amp;#10;vert_end=[0,b]&amp;#10;&amp;#10;#define loc&amp;#10;c=150&amp;#10;d=106&amp;#10;loc1=(c,0);loc2=(d,d);loc3=(0,c);loc4=(-d,d);&amp;#10;loc5=(-c,0);loc6=(-d,-d);loc7=(0,-c);loc8=(d,-d)&amp;#10;locs=[loc1,loc2,loc3,loc4,loc5,loc6,loc7,loc8]&amp;#10;#define loc_list&amp;#10;high_prob_loc = locs[int(random() * 8)] &amp;#10;low_prob_locs = [loc for loc in locs if loc != high_prob_loc]&amp;#10;#define dis loc list&amp;#10;distractor_locs=[]&amp;#10;tar_only_locs=[]&amp;#10;#distractor_locs=[high_prob_loc]*24+low_prob_locs*8  # distractor locations&amp;#10;# 添加 24 个 high_prob_loc&amp;#10;for _ in range(24):&amp;#10;    distractor_locs.append(high_prob_loc)&amp;#10;# 添加 8 个每个 low_prob_loc&amp;#10;for loc in low_prob_locs:&amp;#10;    for _ in range(8):&amp;#10;        distractor_locs.append(loc)&amp;#10;shuffle(distractor_locs)&amp;#10;#tar_only_locs = locs*5  # target locations&amp;#10;# 添加 5 轮所有 locs&amp;#10;for _ in range(5):&amp;#10;    for loc in locs:&amp;#10;        tar_only_locs.append(loc)&amp;#10;shuffle(tar_only_locs)&amp;#10;print(tar_only_locs)&amp;#10;print(distractor_locs)&amp;#10;#define parameter list&amp;#10;shape = ['circle', 'diamond']&amp;#10;distractor = ['red', 'green', 'no_dis']&amp;#10;detection  = ['hori','vert']&amp;#10;&amp;#10;# 计算基础试次数&amp;#10;base_trial_count = len(shape) * len(distractor) * len(detection)  # 2×3×2=12&amp;#10;repeat_times = 10  # 需要重复的次数&amp;#10;&amp;#10;# 显式构建试次列表&amp;#10;trial_list_new = []&amp;#10;trial = []&amp;#10;for _ in range(repeat_times):&amp;#10;    for s in shape:&amp;#10;        for ds in distractor:&amp;#10;            for d in detection:&amp;#10;                # 强制所有元素为字符串类型&amp;#10;                trial = [s,ds,d,&amp;#10;                    'left' if d == 'hori' else 'up'&amp;#10;                ]&amp;#10;                trial_list_new.append(trial)  # 必须创建独立副本&amp;#10;&amp;#10;shuffle(trial_list_new)&amp;#10;# Add the distractor locations.&amp;#10;j = 0&amp;#10;k = 0&amp;#10;filtered_locs = []&amp;#10;n=[]&amp;#10;random_index=[]&amp;#10;tar_both_loc=[]&amp;#10;new_trial=[]&amp;#10;dis_loc_fake=(9999,9999)&amp;#10;for i in range(120):&amp;#10;    new_trial=[]&amp;#10;    if str(trial_list_new[i][1]) == &quot;no_dis&quot;:  # [1]指的是第二项&amp;#10;#        trial_list_new[i] = trial_list_new[i]+[dis_loc_fake,tar_only_locs[k]]&amp;#10;        new_trial = [&amp;#10;            str(trial_list_new[i][0]),  # tar_shape&amp;#10;            str(trial_list_new[i][1]),  # dis_color_condi&amp;#10;            str(trial_list_new[i][2]),  # tar_line&amp;#10;            str(trial_list_new[i][3]),  # cor_resp&amp;#10;            list([99999, 99999]),      # dis_loc（显式定义为元组）&amp;#10;            list(tar_only_locs[k])     # tar_loc（确保为元组）&amp;#10;        ]&amp;#10;        trial_list_new[i] = new_trial&amp;#10;        k = k + 1&amp;#10;    else:&amp;#10;        filtered_locs = []&amp;#10;        for m in locs:&amp;#10;            if m != distractor_locs[j]:&amp;#10;                filtered_locs.append(m)&amp;#10;        n = len(filtered_locs)&amp;#10;        random_index = int(random() * n)  # 在Python中会调用random模块，在JS中会转为Math.random()&amp;#10;        tar_both_loc = filtered_locs[random_index]&amp;#10;#        tar_both_loc = random.choice([m for m in locs if not m == distractor_locs[j]])&amp;#10;#        trial_list_new[i] = trial_list_new[i]+[distractor_locs[j],tar_both_loc]&amp;#10;        new_trial = [&amp;#10;            str(trial_list_new[i][0]),&amp;#10;            str(trial_list_new[i][1]),&amp;#10;            str(trial_list_new[i][2]),&amp;#10;            str(trial_list_new[i][3]),&amp;#10;            list(distractor_locs[j]),  # dis_loc&amp;#10;            list(tar_both_loc)          # tar_loc&amp;#10;        ]&amp;#10;        trial_list_new[i] = new_trial&amp;#10;&amp;#10;        j = j + 1&amp;#10;#thisExp.addData('trial_list_new', trial_list_new)&amp;#10;shuffle(trial_list_new)&amp;#10;current_trial = 0&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="&amp;#10;        // add-on: list(s: string): string[]&amp;#10;        function list(s) {&amp;#10;            // if s is a string, we return a list of its characters&amp;#10;            if (typeof s === 'string')&amp;#10;                return s.split('');&amp;#10;            else&amp;#10;                // otherwise we return s:&amp;#10;                return s;&amp;#10;        }&amp;#10;&amp;#10;        block_num = 0;&amp;#10;circle_vertices = [];&amp;#10;theta = [];&amp;#10;x = [];&amp;#10;y = [];&amp;#10;green = [(- 1), 0, (- 1)];&amp;#10;red = [1, 0, 0];&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(100), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    theta = (((2 * pi) * i) / 99);&amp;#10;    x = (25 * Math.cos(theta));&amp;#10;    y = (25 * Math.sin(theta));&amp;#10;    circle_vertices.push([x, y]);&amp;#10;}&amp;#10;a = 21;&amp;#10;diamond_vertices = [[(- a), a], [a, a], [a, (- a)], [(- a), (- a)]];&amp;#10;b = 15;&amp;#10;hori_start = [(- b), 0];&amp;#10;hori_end = [b, 0];&amp;#10;vert_start = [0, (- b)];&amp;#10;vert_end = [0, b];&amp;#10;c = 150;&amp;#10;d = 106;&amp;#10;loc1 = [c, 0];&amp;#10;loc2 = [d, d];&amp;#10;loc3 = [0, c];&amp;#10;loc4 = [(- d), d];&amp;#10;loc5 = [(- c), 0];&amp;#10;loc6 = [(- d), (- d)];&amp;#10;loc7 = [0, (- c)];&amp;#10;loc8 = [d, (- d)];&amp;#10;locs = [loc1, loc2, loc3, loc4, loc5, loc6, loc7, loc8];&amp;#10;high_prob_loc = locs[Number.parseInt((Math.random() * 8))];&amp;#10;low_prob_locs = function () {&amp;#10;    var _pj_a = [], _pj_b = locs;&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var loc = _pj_b[_pj_c];&amp;#10;        if ((loc !== high_prob_loc)) {&amp;#10;            _pj_a.push(loc);&amp;#10;        }&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;}&amp;#10;.call(this);&amp;#10;distractor_locs = [];&amp;#10;tar_only_locs = [];&amp;#10;for (var _, _pj_c = 0, _pj_a = util.range(24), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    _ = _pj_a[_pj_c];&amp;#10;    distractor_locs.push(high_prob_loc);&amp;#10;}&amp;#10;for (var loc, _pj_c = 0, _pj_a = low_prob_locs, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    loc = _pj_a[_pj_c];&amp;#10;    for (var _, _pj_f = 0, _pj_d = util.range(8), _pj_e = _pj_d.length; (_pj_f &lt; _pj_e); _pj_f += 1) {&amp;#10;        _ = _pj_d[_pj_f];&amp;#10;        distractor_locs.push(loc);&amp;#10;    }&amp;#10;}&amp;#10;util.shuffle(distractor_locs);&amp;#10;for (var _, _pj_c = 0, _pj_a = util.range(5), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    _ = _pj_a[_pj_c];&amp;#10;    for (var loc, _pj_f = 0, _pj_d = locs, _pj_e = _pj_d.length; (_pj_f &lt; _pj_e); _pj_f += 1) {&amp;#10;        loc = _pj_d[_pj_f];&amp;#10;        tar_only_locs.push(loc);&amp;#10;    }&amp;#10;}&amp;#10;util.shuffle(tar_only_locs);&amp;#10;console.log(tar_only_locs);&amp;#10;console.log(distractor_locs);&amp;#10;shape = [&quot;circle&quot;, &quot;diamond&quot;];&amp;#10;distractor = [&quot;red&quot;, &quot;green&quot;, &quot;no_dis&quot;];&amp;#10;detection = [&quot;hori&quot;, &quot;vert&quot;];&amp;#10;base_trial_count = ((shape.length * distractor.length) * detection.length);&amp;#10;repeat_times = 10;&amp;#10;trial_list_new = [];&amp;#10;trial = [];&amp;#10;for (var _, _pj_c = 0, _pj_a = util.range(repeat_times), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    _ = _pj_a[_pj_c];&amp;#10;    for (var s, _pj_f = 0, _pj_d = shape, _pj_e = _pj_d.length; (_pj_f &lt; _pj_e); _pj_f += 1) {&amp;#10;        s = _pj_d[_pj_f];&amp;#10;        for (var ds, _pj_i = 0, _pj_g = distractor, _pj_h = _pj_g.length; (_pj_i &lt; _pj_h); _pj_i += 1) {&amp;#10;            ds = _pj_g[_pj_i];&amp;#10;            for (var d, _pj_l = 0, _pj_j = detection, _pj_k = _pj_j.length; (_pj_l &lt; _pj_k); _pj_l += 1) {&amp;#10;                d = _pj_j[_pj_l];&amp;#10;                trial = [s, ds, d, ((d === &quot;hori&quot;) ? &quot;left&quot; : &quot;up&quot;)];&amp;#10;                trial_list_new.push(trial);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;util.shuffle(trial_list_new);&amp;#10;j = 0;&amp;#10;k = 0;&amp;#10;filtered_locs = [];&amp;#10;n = [];&amp;#10;random_index = [];&amp;#10;tar_both_loc = [];&amp;#10;new_trial = [];&amp;#10;dis_loc_fake = [9999, 9999];&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(120), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    new_trial = [];&amp;#10;    if ((trial_list_new[i][1].toString() === &quot;no_dis&quot;)) {&amp;#10;        new_trial = [trial_list_new[i][0].toString(), trial_list_new[i][1].toString(), trial_list_new[i][2].toString(), trial_list_new[i][3].toString(), list([99999, 99999]), list(tar_only_locs[k])];&amp;#10;        trial_list_new[i] = new_trial;&amp;#10;        k = (k + 1);&amp;#10;    } else {&amp;#10;        filtered_locs = [];&amp;#10;        for (var m, _pj_f = 0, _pj_d = locs, _pj_e = _pj_d.length; (_pj_f &lt; _pj_e); _pj_f += 1) {&amp;#10;            m = _pj_d[_pj_f];&amp;#10;            if ((m !== distractor_locs[j])) {&amp;#10;                filtered_locs.push(m);&amp;#10;            }&amp;#10;        }&amp;#10;        n = filtered_locs.length;&amp;#10;        random_index = Number.parseInt((Math.random() * n));&amp;#10;        tar_both_loc = filtered_locs[random_index];&amp;#10;        new_trial = [trial_list_new[i][0].toString(), trial_list_new[i][1].toString(), trial_list_new[i][2].toString(), trial_list_new[i][3].toString(), list(distractor_locs[j]), list(tar_both_loc)];&amp;#10;        trial_list_new[i] = new_trial;&amp;#10;        j = (j + 1);&amp;#10;    }&amp;#10;}&amp;#10;util.shuffle(trial_list_new);&amp;#10;current_trial = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="trial_info = trial_list_new[current_trial];&amp;#10;current_trial = (current_trial + 1);&amp;#10;psychoJS.experiment.addData(&quot;trial_para&quot;, trial_info);&amp;#10;tar_shape = [];&amp;#10;dis_color_condi = [];&amp;#10;tar_line = [];&amp;#10;cor_resp = [];&amp;#10;dis_loc = [];&amp;#10;tar_loc = [];&amp;#10;tar_shape = trial_info[0];&amp;#10;dis_color_condi = trial_info[1];&amp;#10;tar_line = trial_info[2];&amp;#10;cor_resp = trial_info[3];&amp;#10;dis_loc = trial_info[4];&amp;#10;tar_loc = trial_info[5];&amp;#10;psychoJS.experiment.addData(&quot;tar_shape&quot;, tar_shape);&amp;#10;psychoJS.experiment.addData(&quot;dis_color_condi&quot;, dis_color_condi);&amp;#10;psychoJS.experiment.addData(&quot;tar_line&quot;, tar_line);&amp;#10;psychoJS.experiment.addData(&quot;cor_resp&quot;, cor_resp);&amp;#10;psychoJS.experiment.addData(&quot;dis_loc&quot;, dis_loc);&amp;#10;psychoJS.experiment.addData(&quot;tar_loc&quot;, tar_loc);&amp;#10;shapes = {&quot;loc1_shape&quot;: loc1_shape, &quot;loc2_shape&quot;: loc2_shape, &quot;loc3_shape&quot;: loc3_shape, &quot;loc4_shape&quot;: loc4_shape, &quot;loc5_shape&quot;: loc5_shape, &quot;loc6_shape&quot;: loc6_shape, &quot;loc7_shape&quot;: loc7_shape, &quot;loc8_shape&quot;: loc8_shape};&amp;#10;lines = {&quot;loc1_shape&quot;: loc1_line, &quot;loc2_shape&quot;: loc2_line, &quot;loc3_shape&quot;: loc3_line, &quot;loc4_shape&quot;: loc4_line, &quot;loc5_shape&quot;: loc5_line, &quot;loc6_shape&quot;: loc6_line, &quot;loc7_shape&quot;: loc7_line, &quot;loc8_shape&quot;: loc8_line};&amp;#10;loc_to_shape_name = {[[150, 0]]: &quot;loc1_shape&quot;, [[106, 106]]: &quot;loc2_shape&quot;, [[0, 150]]: &quot;loc3_shape&quot;, [[(- 106), 106]]: &quot;loc4_shape&quot;, [[(- 150), 0]]: &quot;loc5_shape&quot;, [[(- 106), (- 106)]]: &quot;loc6_shape&quot;, [[0, (- 150)]]: &quot;loc7_shape&quot;, [[106, (- 106)]]: &quot;loc8_shape&quot;};&amp;#10;shape_map = {&quot;circle&quot;: circle_vertices, &quot;diamond&quot;: diamond_vertices};&amp;#10;colors = [];&amp;#10;other_shape = ((tar_shape === &quot;circle&quot;) ? &quot;diamond&quot; : &quot;circle&quot;);&amp;#10;if ((dis_color_condi === &quot;red&quot;)) {&amp;#10;    other_color = green;&amp;#10;} else {&amp;#10;    if ((dis_color_condi === &quot;green&quot;)) {&amp;#10;        other_color = red;&amp;#10;    } else {&amp;#10;        if ((dis_color_condi === &quot;no_dis&quot;)) {&amp;#10;            colors = [red, green];&amp;#10;            other_color = colors[Number.parseInt((Math.random() * colors.length))];&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;util.shuffle(locs);&amp;#10;loc = [];&amp;#10;shape_name = [];&amp;#10;shape = [];&amp;#10;line = [];&amp;#10;line_dir = [];&amp;#10;dis_line = [];&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(locs.length), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    loc = locs[i];&amp;#10;    shape_name = loc_to_shape_name[loc];&amp;#10;    shape = shapes[shape_name];&amp;#10;    line = lines[shape_name];&amp;#10;    if ((loc === tar_loc)) {&amp;#10;        shape.vertices = shape_map[tar_shape];&amp;#10;        shape.lineColor = other_color;&amp;#10;        line.vertices = ((tar_line === &quot;hori&quot;) ? [hori_start, hori_end] : [vert_start, vert_end]);&amp;#10;    } else {&amp;#10;        if ((loc === dis_loc)) {&amp;#10;            shape.vertices = shape_map[other_shape];&amp;#10;            shape.lineColor = ((dis_color_condi === &quot;red&quot;) ? red : green);&amp;#10;            dis_line = [];&amp;#10;            line_dir = [&quot;hori&quot;, &quot;vert&quot;];&amp;#10;            dis_line = line_dir[Number.parseInt((Math.random() * line_dir.length))];&amp;#10;            line.vertices = ((dis_line === &quot;hori&quot;) ? [hori_start, hori_end] : [vert_start, vert_end]);&amp;#10;        } else {&amp;#10;            shape.vertices = shape_map[other_shape];&amp;#10;            shape.lineColor = other_color;&amp;#10;            if (((i % 2) === 0)) {&amp;#10;                line.vertices = [hori_start, hori_end];&amp;#10;            } else {&amp;#10;                line.vertices = [vert_start, vert_end];&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;feedback_text = &quot;&quot;;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="trial_info=trial_list_new[current_trial]&amp;#10;current_trial=current_trial+1&amp;#10;&amp;#10;thisExp.addData('trial_para', trial_info)&amp;#10;&amp;#10;tar_shape=[]&amp;#10;dis_color_condi=[]&amp;#10;tar_line=[]&amp;#10;cor_resp=[]&amp;#10;dis_loc=[]&amp;#10;tar_loc=[]&amp;#10;#unpacking trial info&amp;#10;tar_shape=trial_info[0]#目标形状&amp;#10;dis_color_condi=trial_info[1]#干扰有无和颜色条件&amp;#10;tar_line=trial_info[2]#目标形状内线段朝向&amp;#10;cor_resp=trial_info[3]#正确反应按键&amp;#10;dis_loc = trial_info[4]&amp;#10;tar_loc = trial_info[5]&amp;#10;&amp;#10;thisExp.addData('tar_shape', tar_shape)&amp;#10;thisExp.addData('dis_color_condi', dis_color_condi)&amp;#10;thisExp.addData('tar_line', tar_line)&amp;#10;thisExp.addData('cor_resp', cor_resp)&amp;#10;thisExp.addData('dis_loc', dis_loc)&amp;#10;thisExp.addData('tar_loc', tar_loc)&amp;#10;&amp;#10;#define maps&amp;#10;shapes = {&amp;#10;    &quot;loc1_shape&quot;: loc1_shape,&amp;#10;    &quot;loc2_shape&quot;: loc2_shape,&amp;#10;    &quot;loc3_shape&quot;: loc3_shape,&amp;#10;    &quot;loc4_shape&quot;: loc4_shape,&amp;#10;    &quot;loc5_shape&quot;: loc5_shape,&amp;#10;    &quot;loc6_shape&quot;: loc6_shape,&amp;#10;    &quot;loc7_shape&quot;: loc7_shape,&amp;#10;    &quot;loc8_shape&quot;: loc8_shape&amp;#10;}&amp;#10;&amp;#10;lines = {&amp;#10;    &quot;loc1_shape&quot;: loc1_line,&amp;#10;    &quot;loc2_shape&quot;: loc2_line,&amp;#10;    &quot;loc3_shape&quot;: loc3_line,&amp;#10;    &quot;loc4_shape&quot;: loc4_line,&amp;#10;    &quot;loc5_shape&quot;: loc5_line,&amp;#10;    &quot;loc6_shape&quot;: loc6_line,&amp;#10;    &quot;loc7_shape&quot;: loc7_line,&amp;#10;    &quot;loc8_shape&quot;: loc8_line&amp;#10;}&amp;#10;&amp;#10;# 定义位置到组件名称的映射&amp;#10;loc_to_shape_name = { &amp;#10;    (150, 0): &quot;loc1_shape&quot;,&amp;#10;    (106, 106): &quot;loc2_shape&quot;,&amp;#10;    (0, 150): &quot;loc3_shape&quot;,&amp;#10;    (-106, 106): &quot;loc4_shape&quot;,&amp;#10;    (-150, 0): &quot;loc5_shape&quot;,&amp;#10;    (-106, -106): &quot;loc6_shape&quot;,&amp;#10;    (0, -150): &quot;loc7_shape&quot;,&amp;#10;    (106, -106): &quot;loc8_shape&quot;&amp;#10;}    &amp;#10;&amp;#10;# 定义形状和颜色的映射&amp;#10;shape_map = {&amp;#10;    'circle': circle_vertices,&amp;#10;    'diamond': diamond_vertices&amp;#10;}&amp;#10;&amp;#10;colors=[]&amp;#10;# 设置其他位置的形状和颜色&amp;#10;other_shape = 'diamond' if tar_shape == 'circle' else 'circle'&amp;#10;if dis_color_condi == 'red':&amp;#10;    other_color = green&amp;#10;elif dis_color_condi== 'green':&amp;#10;    other_color = red&amp;#10;elif dis_color_condi == 'no_dis':&amp;#10;    colors = [red, green]&amp;#10;    other_color = colors[int(random() * len(colors))]&amp;#10;&amp;#10;shuffle(locs)&amp;#10;loc=[]&amp;#10;shape_name=[]&amp;#10;shape=[]&amp;#10;line=[]&amp;#10;line_dir=[]&amp;#10;dis_line=[]&amp;#10;# 遍历所有位置，设置形状和线条属性&amp;#10;for i in range(len(locs)):&amp;#10;    loc = locs[i]&amp;#10;    shape_name = loc_to_shape_name[loc]&amp;#10;    shape = shapes[shape_name]&amp;#10;    line = lines[shape_name]&amp;#10;    if loc == tar_loc:&amp;#10;      shape.vertices = shape_map[tar_shape]&amp;#10;      shape.lineColor = other_color&amp;#10;      line.vertices = [hori_start, hori_end] if tar_line == 'hori' else [vert_start, vert_end]&amp;#10;     &amp;#10;    elif loc == dis_loc:&amp;#10;       shape.vertices = shape_map[other_shape]&amp;#10;       shape.lineColor = red if dis_color_condi == 'red' else green&amp;#10;#       dis_line=random.choice(['hori', 'vert'])&amp;#10;       dis_line=[]&amp;#10;       line_dir = ['hori', 'vert']&amp;#10;       dis_line = line_dir[int(random() * len(line_dir))]&amp;#10;       line.vertices = [hori_start,hori_end] if dis_line == 'hori' else [vert_start,vert_end]&amp;#10;&amp;#10;    else:&amp;#10;        # 其他位置：设置相反的形状和颜色&amp;#10;        shape.vertices = shape_map[other_shape]&amp;#10;        shape.lineColor = other_color&amp;#10;        if i % 2 == 0:  # 偶数索引：水平方向&amp;#10;            line.vertices = [hori_start,hori_end]&amp;#10;        else:  # 奇数索引：竖直方向&amp;#10;            line.vertices = [vert_start,vert_end]&amp;#10;&amp;#10;feedback_text = &quot;&quot;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((resp.keys === null)) {&amp;#10;    feedback_text = &quot;\u8bf7\u53ca\u65f6\u53cd\u5e94\uff0c\u96c6\u4e2d\u6ce8\u610f\u529b\uff01&quot;;&amp;#10;} else {&amp;#10;    if ((resp.keys !== cor_resp)) {&amp;#10;        feedback_text = &quot;\u9519\u8bef\uff01&quot;;&amp;#10;    } else {&amp;#10;        feedback_text = &quot;&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="# 判断按键是否正确&amp;#10;if resp.keys is None:  # 没有按键&amp;#10;    feedback_text = &quot;请及时反应，集中注意力！&quot;&amp;#10;elif resp.keys != cor_resp:  # 按键错误&amp;#10;    feedback_text = &quot;错误！&quot;&amp;#10;else:  # 按键正确&amp;#10;    feedback_text = &quot;&quot;  # 不显示反馈&amp;#10;    &amp;#10;" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instr"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="fix"/>
+    <Routine name="trial"/>
+    <Routine name="feedback"/>
+    <Routine name="iti"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="formal_cue"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="6" valType="num"/>
+      <Param name="name" updates="None" val="trials_3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="120" valType="num"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="fix"/>
+    <Routine name="trial"/>
+    <Routine name="feedback"/>
+    <Routine name="iti"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="break_3"/>
+    <LoopTerminator name="trials_3"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
